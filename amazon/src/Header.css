@@ -1,0 +1,65 @@
+
+.header{
+    background-color: #131921;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* z-index is set to 100 because we do not want anything to be displaying over it, even if anything is overlapping with the navbar it's z-index styling will always keep it on top */
+    
+}
+/* Setting the width in a image will decrease/increase in the same aspect-ratio as it has */
+.header__logo{
+    width: 100px;
+    object-fit: contain; /* THis styling says that even if the viewport is of any dimension the element/s styled with this will contain/remain in its said aspect-ratio and will not stretch or compress */
+    margin: 20px 20px 0 20px;
+}
+.header__search{
+    display: flex;
+    align-items: center;
+    flex: 1; 
+     /* This styling says that it should try to use up as much room/space as it can */
+}
+.header__searchInput{
+    height: 15px;
+    padding: 7px;
+    width: 100%;
+}
+.header__searchIcon{
+    padding: 5px;
+    height: 22px !important ;
+    background-color: #cd9042;
+}
+.header__Nav{
+    display: flex;
+    justify-content: space-evenly ;
+}
+.header__link{
+    color: white;
+    text-decoration: none;
+    /* This will remove any decoration like underline done to the text */
+}
+.header__option{
+    display: flex;
+    flex-direction: column;
+    /* padding: 10px;  */
+    /*Padding will result in a dding of spacing within the element */
+    margin: 0 10px 0 10px;
+    /*Margin will result in adding of spacing outside the element */
+}
+.header__optionLineOne{
+    font-size: 10px;
+}
+.header__optionLineTwo{
+    font-size: 13px;
+    font-weight: 700;
+}
+.header__optionBasket{
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+}
+.header__basketCount{
+    margin: 0 10px 0 10px
+}

@@ -1,0 +1,5 @@
+/* We apply this styling to all the elements/tags because the browser adds some margin and padding and we do not want that. React has a margin of 10px everywhere and by applying this we can make sure we are applying all styling */
+*{
+  margin: 0;
+  padding: 0;
+}
