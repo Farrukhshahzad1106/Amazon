@@ -73,4 +73,12 @@
     width: 100%;
     /* mask-image property specifies an image to be used as a mask layer for an element. HEre we are masking the image with a gradient that has a higher opacity at the top and lower opacity at the bottom */
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+    z-index: -1; /* If anything comes over this element then this element goes at the back and the element with z-index greater than this comes at the front */
+    margin-bottom: -100px; /* This pull the element to the bottom of it upwards and make it overlap by giving a negative value to margin  */
+}
+.home__row {
+    display: flex;
+    z-index: 1;
+    margin-left: 5px;
+    margin-right: 5px;
 }
